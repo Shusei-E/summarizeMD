@@ -8,7 +8,7 @@ Each item of summary is linked to the respective section.
 - chmod +x summarizeMD
 - ~~./summarizeMD \<yourfile\>.md~~
 
-Now you have to use full path (drag & drop files on Terminal)
+**Now you have to use full path (drag & drop files on Terminal)**
 ```
 $ /home/Desktop/summarizeMD /home/Desktop/sample.md
 ```
@@ -16,7 +16,7 @@ $ /home/Desktop/summarizeMD /home/Desktop/sample.md
 
 #Output
 
-~~In order to preserve original file, the output of the script produce another file prepending generated summary.
+In order to preserve original file, the output of the script produce another file prepending generated summary.
 
     $ls 
 	.
@@ -33,7 +33,6 @@ $ /home/Desktop/summarizeMD /home/Desktop/sample.md
     summarizeMD
     readme.md
     summarized_readme.md
-~~       
   
 #Options
 
