@@ -6,8 +6,11 @@ Each item of summary is linked to the respective section.
 - download file
 - open console
 - chmod +x summarizeMD
-- ./summarizeMD \<yourfile\>.md
-
+- ~./summarizeMD \<yourfile\>.md~
+Now you have to use full path (drag & drop files on Terminal)
+```
+$ /home/Desktop/summarizeMD /home/Desktop/sample.md
+```
 
 
 #Output
