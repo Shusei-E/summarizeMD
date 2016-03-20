@@ -16,7 +16,7 @@ $ /home/Desktop/summarizeMD /home/Desktop/sample.md
 
 #Output
 
-In order to preserve original file, the output of the script produce another file prepending generated summary.
+~~In order to preserve original file, the output of the script produce another file prepending generated summary.
 
     $ls 
 	.
@@ -33,7 +33,7 @@ In order to preserve original file, the output of the script produce another fil
     summarizeMD
     readme.md
     summarized_readme.md
-       
+~~       
   
 #Options
 
