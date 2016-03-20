@@ -21,11 +21,13 @@ class MDUtils
 			abort("Please enter a valid MD file.")
 		end
 
-		puts "Generating summary for file " + filename
+		basename = File.basename(filename)
+
+		puts "Generating summary for file " + basename
 
 		# In order to be sure to not write on existing file
 		timeNow = Time.now.to_f
-		tmpfilename = "tmp_00_" + timeNow.inspect + ".md"
+		tmpfilename = File.dirname(filename) + "/" + "tmp_00_" + timeNow.inspect + ".md"
 		temp_file = File.new(tmpfilename, "w")
 
 		summary = "\#Summary \n\n"
@@ -52,7 +54,7 @@ class MDUtils
 
 			temp_file.close
 			summary += "  \n\n"
-			outputFilename = "summarized_" + filename
+			outputFilename = File.dirname(filename) + "/" + "summarized_" + basename
 			if !options.output.empty? 
 				outputFilename = options.output
 				outputComponents = outputFilename.split(".")
@@ -136,4 +138,3 @@ end  # class OptparseExample
 options = OptparseSummarize.parse(ARGV)
 
 mdUtils = MDUtils.summarize([ARGV[0], options]);
-
