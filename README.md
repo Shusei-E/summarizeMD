@@ -1,4 +1,4 @@
-# summarizeMD
+# summarizeMD (forked from velthune/summarizeMD)
 SummarizeMD is a simple Ruby script that generate summary (TOC) for an existing MD document.  
 Each item of summary is linked to the respective section.
 
